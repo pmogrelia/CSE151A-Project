@@ -89,6 +89,18 @@ is_attack (binary):
 ### Missing Values
 Computed in notebook: **0 missing values** across all loaded columns.
 
+### Pre-processing data plan
+
+- Remove highly correlated features to avoid redundancy and multicollinearity
+- Handle outliers so that extreme values do not dominate training
+- Drop duplicates and unneeded columns to keep the dataset clean and efficient
+- Balance the data by equally sampling between:
+  - attack vs benign traffic
+  - different botnet families
+  - different attack types
+- Normalize and standardize features so that all variables contribute equally to the model
+- Remove data with minimal weight (very small subsets or irrelevant samples) to reduce noise
+
 ### Duplicate Rows
 Computed in notebook: **157779** across entire df. 
 
