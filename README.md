@@ -1,5 +1,5 @@
 # CSE151A-Project
-
+Link to our [notebook](CSE151A_Project.ipynb)
 ## Dataset Link 
 UCI Machine Learning Repository – Detection of IoT Botnet Attacks (N-BaIoT):  
 https://archive.ics.uci.edu/dataset/442/detection+of+iot+botnet+attacks+n+baiot
