@@ -92,7 +92,7 @@ Computed in notebook: **0 missing values** across all loaded columns.
 ### Duplicate Rows
 Computed in notebook: **157779** across entire df. 
 
-## Pre-processing data plan
+## Pre-processing Data Plan
 
 - Remove highly correlated features to avoid redundancy and multicollinearity
 - Handle outliers so that extreme values do not dominate training
