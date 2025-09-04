@@ -140,29 +140,42 @@ When evaluating our models against the bias–variance trade-off, we found that 
 - 4: Conclusion section: What is the conclusion of your 1st model? What can be done to improve it? (5 points)
 Our first model achieved extremely high precision, recall, and F1-score, but its placement high on the overfitting curve signals that caution is needed. While the decision tree demonstrated that the data is highly separable, this also means that the model may not generalize well outside the sampled test set. To mitigate overfitting and improve robustness, our next steps include training Support Vector Machines, which are known for handling high-dimensional and imbalanced data more effectively when tuned with proper kernels and regularization. In addition, we plan to refine preprocessing by encoding categorical features, experimenting with feature transformations, and conducting thorough cross-validation. These adjustments will provide a clearer picture of how to move from a potentially overfit model toward one that balances accuracy and generalization.
 
-## Final Written Report
+# Final Written Report
 
-# Introduction to Your Project
+## Introduction to Your Project
 Why was it chosen? Why is it cool? Discuss the general/broader impact of having a good predictive mode. i.e. why is this important? (3 points)
+- We chose this project because network security is one of the most pressing challenges in our increasingly digital world. Every day, malicious actors attempt to disrupt services in information or compromise systems, and these threats are often embedded within massive volumes of normal traffic. Machine learning, particularly deep learning, offers a powerful way to detect such attacks by identifying patterns that are too complex for humans or traditional rule-based systems to catch and which is what makes the project interesting and important. It demonstrates how AI can be leveraged to actively protect systems from cyberattacks in real time, essentially learning how to differentiate malicious behaviors from normal ones in ways that scale with modern internet traffic, which is what makes it a cool project. The broader impact of developing a good predictive model in this domain is huge, as it contributes to safer communication networks, helps prevent financial and data losses, and builds resilience against cyber threats, which are constantly evolving.
 
-# Figures
+## Figures
 Your report should include relevant figures of your choosing to help with the narration of your story, including legends (similar to a scientific paper). For reference you search machine learning and your model in google scholar for reference examples. (3 points)
 
-# Methods Section
+## Methods Section
 This section will include the exploration results, preprocessing steps, models chosen in the order they were executed. You should also describe the parameters chosen. Please make sub-sections for every step. i.e Data Exploration, Preprocessing, Model 1, Model 2, additional models are optional. Please note that models can be the same i.e. DNN but different versions of it if they are distinct enough. Changes can not be incremental. You can put links here to notebooks and/or code blocks using three ` in markup for displaying code. so it would look like this: ``` MY CODE BLOCK ```
 
 *Note: A methods section does not include any why. the reason why will be in the discussion section. This is just a summary of your methods (5 points)*
+- Data Exploration: We looked at possible options for datasets and found a decent dataset with enough observations to fit our requirements that was also interesting and usable for predictions; then downloaded the entirety of the dataset and condensed it into a single dataframe. We then printed the dataframe’s shape, the list of features, first couple rows, data types, and target/device distributions.
+- Preprocessing: We checked our data for any unwanted columns/values by checking for duplicated columns and empty, null, or N/A values and removed them from our dataset, then printed out our dataset’s shape before and after cleaning. We then balanced our dataset to have equal amounts of samples for both attack and benign traffic, and normalized all our columns.
+- Model 1: We used a decision tree classifier model to classify our data, and used our training and testing split on our original 7 million instance dataset to calculate our confusion matrix, which we printed. We tweaked our model’s hyperparameters to optimize the best confusion matrix, which was partly recommended by GPT.
+- Model 2: For our unsupervised model, we decided to fit PCA on a stratified sample of our data, then use K-means clustering with k=2 to map the data into either benign or attack traffic. We then compared our predictions with the actual and printed out our accuracy, precision, recall, and f1 score.
 
-# Results Section
+## Results Section
 This will include the results from the methods listed above (C). You will have figures here about your results as well. No exploration of results is done here. This is mainly just a summary of your results. The sub-sections will be the same as the sections in your methods section. (5 points)
+- Data Exploration:
+- Preprocessing:
+- Model 1:
+- Model 2:
 
-# Discussion Section
+## Discussion Section
 This is where you will discuss the why, and your interpretation and your though process from beginning to end. This will mimic the sections you have created in your methods section as well as new sections you feel you need to create. You can also discuss how believable your results are at each step. You can discuss any short comings. It's ok to criticize as this shows your intellectual merit, as to how you are thinking about things scientifically and how you are able to correctly scrutinize things and find short comings. In science we never really find the perfect solution, especially since we know something will probably come up int he future (i.e. donkeys) and mess everything up. If you do it's probably a unicorn or the data and model you chose are just perfect for each other! (3 points)
 
-# Conclusion
+## Conclusion
 This is where you do a mind dump on your opinions and possible future directions. Basically what you wish you could have done differently. Here you close with final thoughts. (3 points)
 
-# Statement of Collaboration
+## Statement of Collaboration
 This is a statement of contribution by each member. This will be taken into consideration when making the final grade for each member in the group. Did you work as a team? was there a team leader? project manager? coding? writer? etc. Please be truthful about this as this will determine individual grades in participation. There is no job that is better than the other. If you did no code but did the entire write up and gave feedback during the steps and collaborated then you would still get full credit. If you only coded but gave feedback on the write up and other things, then you still get full credit. If you managed everyone and the deadlines and setup meetings and communicated with teaching staff only then you get full credit. **Every role is important as long as you collaborated and were integral to the completion of the project. If the person did nothing, they risk getting a big fat 0.** Just like in any job, if you did nothing, you have the risk of getting fired. Teamwork is one of the most important qualities in industry and academia!
 
 **Format:** Start with Name: Title: Contribution. If the person contributed nothing then just put in writing: Did not participate in the project. (3 points)
+- Paz: Coder: Coded the first and second model
+- Mohammed: Writer: Helped complete write ups and report
+- Eric: Writer/Coder: Helped with first and second milestone, helped complete write ups and report
+- Joshua: Coder: Helped code the models, set up meetings and deadlines
