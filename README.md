@@ -195,4 +195,4 @@ This is a statement of contribution by each member. This will be taken into cons
 - Paz: Coder: Coded the first and second model
 - Mohammed: Writer: Helped complete write ups and report
 - Eric: Writer/Coder: Helped with first and second milestone, helped complete write ups and report
-- Joshua: Coder: Helped code the models, set up meetings and deadlines
+- Joshua: Coder: Helped code the models, set up documentation templates, set up meetings and deadlines
