@@ -160,10 +160,11 @@ This section will include the exploration results, preprocessing steps, models c
 
 ## Results Section
 This will include the results from the methods listed above (C). You will have figures here about your results as well. No exploration of results is done here. This is mainly just a summary of your results. The sub-sections will be the same as the sections in your methods section. (5 points)
-- Data Exploration:
-- Preprocessing:
-- Model 1:
-- Model 2:
+- Data Exploration: ![dataexp](dataexplorationresults.png)
+- Preprocessing: ![preprocess](preprocessingresults1.png)
+![preprocess2](preprocessingresults2.png)
+- Model 1: ![model1](model1results.png)
+- Model 2: ![model2](model2results.png)
 
 ## Discussion Section
 This is where you will discuss the why, and your interpretation and your though process from beginning to end. This will mimic the sections you have created in your methods section as well as new sections you feel you need to create. You can also discuss how believable your results are at each step. You can discuss any short comings. It's ok to criticize as this shows your intellectual merit, as to how you are thinking about things scientifically and how you are able to correctly scrutinize things and find short comings. In science we never really find the perfect solution, especially since we know something will probably come up int he future (i.e. donkeys) and mess everything up. If you do it's probably a unicorn or the data and model you chose are just perfect for each other! (3 points)
